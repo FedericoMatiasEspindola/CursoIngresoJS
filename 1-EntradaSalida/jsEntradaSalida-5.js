@@ -9,6 +9,8 @@ function Mostar()
 	edad= prompt("edad");
 	document.getElementById('laEdad').value;
 	alert("su nombre es:" +nombre "su edad es:" +edad);*/
+    //primer intento, fallido
+	
 
 	var nombre;
 	var edad;
@@ -16,6 +18,6 @@ function Mostar()
 	nombre= document.getElementById('elNombre').value;
 	edad= document.getElementById('laEdad').value;
 
-	alert("Usted se llama "+nombre +" y tiene" +edad + "años");
+	alert("Usted se llama "+nombre +" y tiene " +edad+ " años"); 
 }
 
