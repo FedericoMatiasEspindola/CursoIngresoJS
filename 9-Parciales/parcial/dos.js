@@ -3,7 +3,9 @@ function Mostrar()
   var importefinal;
   var importeproducto;
 
-  importefinal= document.getElementById('importeFinal').value;
+  //importeproducto= prompt("ingrese el importe de su producto");
+
+  importefinal= document.getElementById('importeFinal').value=importeproducto;
   
   importeproducto= importefinal *21/100;
   importeproducto= importefinal+importeproducto;
