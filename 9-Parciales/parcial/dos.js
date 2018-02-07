@@ -1,14 +1,16 @@
 function Mostrar()
 {
-  var importefinal;
-  var importeproducto;
+  	var importeFinal;
+  	var importeProducto;
 
-  //importeproducto= prompt("ingrese el importe de su producto");
+  	importeProducto= prompt("ingrese el importe de su producto");
 
-  importefinal= document.getElementById('importeFinal').value; //=importeproducto;
+  	importeFinal= document.getElementById('importeFinal').value=importeProducto;
   
-  importeproducto= importefinal *21/100;
-  importeproducto= importefinal+importeproducto;
+  	//importeProducto= parseInt(importe);
 
-  alert("El importe final es: " +importeproducto);
+  	importeProducto= importeFinal *1.1;
+  	//importeProducto= importeFinal+importeProducto;
+
+  	alert("El importe final es: " +importeProducto);
 }
