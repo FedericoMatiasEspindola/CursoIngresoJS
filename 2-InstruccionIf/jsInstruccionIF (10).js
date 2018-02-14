@@ -23,12 +23,12 @@ function Mostrar()
 		alert("EXCELENTE");
 	}
 		else
-		{	
+		
 			if(nota <4)
 			{
 				alert("Vamos, la proxima se puede");
 			}
-		}
+		
 				else
 				{
 					alert("APROBÓ");
