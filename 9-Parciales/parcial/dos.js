@@ -9,7 +9,7 @@ function Mostrar()
   
   	//importeProducto= parseInt(importe);
 
-  	importeProducto= importeFinal *1.1;
+  	importeProducto= importeFinal *1.21;
   	//importeProducto= importeFinal+importeProducto;
 
   	alert("El importe final es: " +importeProducto);
