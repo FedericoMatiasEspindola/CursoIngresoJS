@@ -6,6 +6,7 @@ function Mostrar()
 	var numero;
 	var promedio;
 	var iteraciones=5;
+	
 	while(contador<iteraciones)
 	{
 		contador++;
