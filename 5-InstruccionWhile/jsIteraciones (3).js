@@ -2,13 +2,15 @@ function Mostrar()
 {
 
 	var clave= prompt("ingrese el número clave.");
-	
-	while(clave!="utn750")
+	var intentos=0;
+	while(clave!="utn750" && intentos<2)
 	{
 		clave= prompt("error, ingrese el número clave.");
-		
+		intentos++;
 	}
-
-	alert("Bievenido");
+	if(intentos!=2)
+	{
+		alert("Bievenido");
+	}
 
 }//FIN DE LA FUNCIÓN

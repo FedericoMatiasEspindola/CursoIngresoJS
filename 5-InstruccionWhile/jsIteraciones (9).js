@@ -2,38 +2,31 @@ function Mostrar()
 {
 
 	var contador=0;
-	// declarar variables
 	var maximo;
 	var minimo;
 	var numero;
 	var respuesta='si';
-	//var bandera= true;
+	var acumulador=0;
+	
 
-	while(respuesta!='no')
+	while(respuesta!="no")
 	{
 		contador++;
-		numero=prompt("");
+		numero=prompt("ingrese su numero");
 		numero=parseInt(numero);
-		if(contador==1) //if(bandera= true)
+		respuesta=prompt("Si para continuar , No para salir");
+		if(acumulador<contador)
 		{
 			maximo=numero;
-			minimo=numero;
-			//bandera= false;
-		}else
-		{
-			if(numero>maximo)
-			{
-				maximo=numero;
-			}
-			if(numero<minimo)
+		}
+			else
 			{
 				minimo=numero;
 			}
-		}
-	
+
 	}
 
-
-
+	document.getElementById('maximo').value=maximo;
+	document.getElementById('minimo').value=minimo;
 
 }//FIN DE LA FUNCIÓN

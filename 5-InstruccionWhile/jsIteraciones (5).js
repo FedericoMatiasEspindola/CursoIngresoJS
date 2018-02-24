@@ -8,6 +8,21 @@ function Mostrar()
 		sexo = prompt("error, ingrese f ó m .");
 
 	}
-	document.getElementById('Sexo').value=sexo;
+	if(sexo=="f")
+	{
+		document.getElementById('Sexo').value="Femenino";
+	}
+		else
+		{
+			document.getElementById('Sexo').value="Masculino";
+		}
 
+	/*if(sexo=="m")
+		{
+			sexo="Masculino";	
+		}
+		else
+		{
+			sexo="Femenino";
+		}	
 }//FIN DE LA FUNCIÓN
