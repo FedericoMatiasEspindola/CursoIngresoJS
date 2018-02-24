@@ -7,11 +7,11 @@
 	4-cantidad de varones(5)	-
 	5-cantidad de varones desaprovados(1)	-
 	6-nombre del alumno con mayor nota
-	7-promedio de las mujeres
+	7-promedio de las mujeres 
 	8-sexo de menor de edad
-	9-promedio de las edades de los aprobados (177/6)
-	10-cantidad de notas pares(4)	-
-	11-cantidad de notas impares(3)	-
+	9-promedio de las edades de los aprobados (177/6)	-*
+	10-cantidad de notas pares(4)	-*
+	11-cantidad de notas impares(3)	-*
 */
 
 function Mostrar()
@@ -28,12 +28,14 @@ function Mostrar()
 	//var maximo;
 	//var minimo;
 	//var nombreMaximo;
-	//var promedioMujeres;
+	var acumuladorNotaMujeres=0;
+	var promedioMujeres;
 	var varonesdesaprobados=0;
 	var edad;
 	var acumuladorEdad=0;
 	var contadorDePar=0;
 	var contadorDeImpar=0;
+	var promedioEdadAprobados;
 
 	
 	
@@ -44,7 +46,7 @@ function Mostrar()
 		//cantidad de alumnos
 		alumnos=prompt("ingrese nombre del alumno");
 		contador= contador+1;
-		respuesta=prompt("Si para continuar , No para salir");
+		//respuesta=prompt("Si para continuar , No para salir");
 	
 		//sexo F o M
 		sexo=prompt("ingrese f ó m ");
@@ -69,7 +71,7 @@ function Mostrar()
 		nota=prompt("ingrese su nota");
 		nota=parseInt(nota);
 		acumulador=acumulador+nota;
-		respuesta=prompt("Si para continuar , No para salir");
+		//respuesta=prompt("Si para continuar , No para salir");
 		while(nota <0 || nota >10)
 		{
 			nota=prompt("ingrese bien su nota");
@@ -84,15 +86,36 @@ function Mostrar()
 		}
 
 
+
+		//promedio notas mujeres
+		acumuladorNotaMujeres=acumuladorNotaMujeres+nota;
+		if(nota <0 && sexo== "f")
+		{
+			acumuladorNotaMujeres++;
+		}
 		
-		//edad pedida
+		
+
+
+
+
+
+		//edad pedida - promedio de edades de aprobados
+		edad=prompt("ingrese su edad");
+		edad=parseInt(edad);
+		acumuladorEdad=acumuladorEdad+edad;
 		if(edad <0 && edad >100 )
 		{
 			edad=prompt("ingrese su edad");
 			edad=parseInt(edad);
-			respuesta=prompt("Si para continuar , No para salir");
+			//respuesta=prompt("Si para continuar , No para salir");		
 		}
-
+		if(nota<4)
+		{
+			acumuladorEdad++;
+		}
+		respuesta=prompt("Si para continuar , No para salir");
+		
 
 
 		//notas pares e impares
@@ -111,17 +134,20 @@ function Mostrar()
 	}
 	
 	promedio=acumulador/contador;
-	//promedioMujeres=
+	promedioMujeres=acumuladorNotaMujeres/contador;
+	promedioEdadAprobados=acumuladorEdad/contador;
 
 
 	document.write("<br> son " +contador+ " de alumnos");
 	document.write("<br> el promedio de las nota son "+promedio);
-	document.write("<br> mujeres: "+acumuladorF+" varones: "+acumuladorM);
+	document.write("<br> mujeres: "+acumuladorF);
+	document.write("<br> varones: "+acumuladorM);
 	//document.write("<br> nota del alumno con mas nota "+maximo);
 	document.write("<br> varones desaprobados "+varonesdesaprobados);
-	//document.write("<br> el promedio de las nota son "+promedioMujeres);
+	document.write("<br> el promedio de las notas de las mujeres es "+promedioMujeres);
 	document.write("<br> notas pares ")+contadorDePar;
 	document.write("<br> notas impares ")+contadorDeImpar;
+	document.write("<br> promedio de edad de los aprobados "+promedioEdadAprobados);
 
 }
 
