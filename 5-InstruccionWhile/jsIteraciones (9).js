@@ -6,7 +6,7 @@ function Mostrar()
 	var minimo;
 	var numero;
 	var respuesta='si';
-	var acumulador=0;
+	
 	
 
 	while(respuesta!="no")
@@ -15,14 +15,22 @@ function Mostrar()
 		numero=prompt("ingrese su numero");
 		numero=parseInt(numero);
 		respuesta=prompt("Si para continuar , No para salir");
-		if(acumulador<contador)
+		if(contador==1)
 		{
 			maximo=numero;
+			minimo=numero;
 		}
-			else
+		else
+		{
+			if(numero>maximo)
+			{
+				maximo=numero;
+			}
+			if(numero<minimo)
 			{
 				minimo=numero;
 			}
+		}
 
 	}
 

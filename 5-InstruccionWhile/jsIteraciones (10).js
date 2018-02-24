@@ -1,8 +1,8 @@
 function Mostrar()
 {
-
-	var contador=0;
 	//declarar contadores y variables 
+	var contador=0;
+	
 	
 	var respuesta="si";
 
