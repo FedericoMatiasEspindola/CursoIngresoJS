@@ -5,12 +5,14 @@ function Mostrar()
 
   	importeProducto= prompt("ingrese el importe de su producto");
 
-  	importeFinal= document.getElementById('importeFinal').value=importeProducto;
-  
   	//importeProducto= parseInt(importe);
 
-  	importeProducto= importeFinal *1.21;
+  	importeFinal= importeProducto *1.21;
   	//importeProducto= importeFinal+importeProducto;
 
-  	alert("El importe final es: " +importeProducto);
+  	//alert("El importe final es: " +importeProducto);
+
+  	document.getElementById('importeFinal').value=importeFinal;
+
+
 }
