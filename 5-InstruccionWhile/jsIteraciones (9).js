@@ -15,7 +15,7 @@ function Mostrar()
 		numero=prompt("ingrese su numero");
 		numero=parseInt(numero);
 		respuesta=prompt("Si para continuar , No para salir");
-		if(contador==1)
+		if(contador==0)
 		{
 			maximo=numero;
 			minimo=numero;
