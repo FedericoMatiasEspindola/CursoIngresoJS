@@ -1,17 +1,17 @@
 //Debemos lograr mostrar un mensaje al presionar el botón  'MOSTRAR'.
 function Mostrar()
 {
-	//alert("Funciona 1-EntradaSalida");
 	
-	var base;
-	var perimetro;
+	var lado;
+	var resultado;
 
-	base= document.getElementById('lado').value;
+	lado=document.getElementById('lado').value;
 
-	perimetro= base*3;
+	resultado=lado*3;
 
-	alert("El perimetro es: " + perimetro);
-
+	alert("el perimetro del triangulo equilatero es "+resultado+" cm");
+	
+	
 	
 
 
