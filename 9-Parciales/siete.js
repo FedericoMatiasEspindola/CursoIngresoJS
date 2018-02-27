@@ -56,13 +56,15 @@ function Mostrar()
 		}
 		else
 		{
-			if(numero>maximo)
+			if(numero>maximo && letra>maximoletra)
 			{ 
 				maximo=numero;
+				maximoletra=letra;
 			}
-			if(numero<minimo)
+			if(numero<minimo && letra<minimoletra)
 			{
 				minimo=numero;
+				minimoletra=letra;
 			}
 		}
 
@@ -75,12 +77,8 @@ function Mostrar()
 			case "u":
 
 				contadorletra++;
-				acumuladorDeLetra=acumuladorDeLetra+letra;
+				acumuladorDeLetra=acumuladorDeLetra+numero;
 				break;
-
-
-
-
 
 
 		}
