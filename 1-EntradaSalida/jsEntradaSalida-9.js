@@ -13,6 +13,8 @@ function MostrarAumento()
 	
 	resultado= sueldo*10/100;
 	resultado= sueldo+resultado;
+
+	//resultado= sueldo*1.10;
 	
 	document.getElementById('resultado').value=resultado;
 	
