@@ -25,7 +25,7 @@ function Mostrar()
 		contador++;
 		letra=prompt("ingrese letra");
 		respuesta=prompt("si para continuar, no para salir")
-		while(letra==(isNaN(numero)))
+		while(!(isNaN(letra)))
 		{
 			letra=prompt("ingrese una letra");
 			//respuesta=prompt("si para continuar, no para salir")
@@ -36,7 +36,7 @@ function Mostrar()
 		numero=prompt("ingrese numero entre -200 y 200");
 		numero=parseInt(numero);
 		respuesta=prompt("si para continuar, no para salir")
-		while(numero<-200 || numero>200)
+		while(numero<-200 || numero>200 )//isNaN(numero))
 		{
 			numero=prompt("ingrese numero entre -200 y 200");
 			numero=parseInt(numero);
@@ -56,13 +56,15 @@ function Mostrar()
 		}
 		else
 		{
-			if(numero>maximo)
+			if(numero>maximo && letra>maximoletra)
 			{ 
 				maximo=numero;
+				maximoletra=letra;
 			}
-			if(numero<minimo)
+			if(numero<minimo && letra<minimoletra)
 			{
 				minimo=numero;
+				minimoletra=letra;
 			}
 		}
 
@@ -75,12 +77,8 @@ function Mostrar()
 			case "u":
 
 				contadorletra++;
-				acumuladorDeLetra=acumuladorDeLetra+letra;
+				acumuladorDeLetra=acumuladorDeLetra+numero;
 				break;
-
-
-
-
 
 
 		}
@@ -99,8 +97,11 @@ function Mostrar()
 
 
 	//document.write("<br> letra del numero mas bajo "+minimo);
-	document.write("<br> "+letra);
-	document.write("<br> "+numero);
+	
+	document.write("<br> "+promedio);
+	document.write("<br> "+maximoletra);
+	document.write("<br> "+minimoletra);
+
 
 
 
