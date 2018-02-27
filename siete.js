@@ -56,13 +56,15 @@ function Mostrar()
 		}
 		else
 		{
-			if(numero>maximo)
+			if(numero>maximo && letra>maximoletra)
 			{ 
 				maximo=numero;
+				maximoletra=letra;
 			}
-			if(numero<minimo)
+			if(numero<minimo && letra<minimoletra)
 			{
 				minimo=numero;
+				minimoletra=letra;
 			}
 		}
 
@@ -95,8 +97,11 @@ function Mostrar()
 
 
 	//document.write("<br> letra del numero mas bajo "+minimo);
-	document.write("<br> "+letra);
-	document.write("<br> "+numero);
+	
+	document.write("<br> "+promedio);
+	document.write("<br> "+maximoletra);
+	document.write("<br> "+minimoletra);
+
 
 
 
