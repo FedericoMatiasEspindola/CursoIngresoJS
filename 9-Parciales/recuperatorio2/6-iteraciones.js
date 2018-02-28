@@ -13,7 +13,7 @@ function Mostrar()
 		contador++;
 		importe=prompt("ingrese su importe")
 		importe=parseInt(importe);
-		while(importe<0)
+		while(importe<0 || isNaN(importe))
 		{
 			importe=prompt("error ingrese un numero mayor a cero")
 			importe=parseInt(importe);

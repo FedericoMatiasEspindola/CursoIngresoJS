@@ -18,14 +18,14 @@ function Mostrar()
 		nota=prompt("ingrese su nota");
 		nota=parseInt(nota);
 		acumulador=acumulador+nota;
-		while(nota<0 || nota>10)
+		while(nota<0 || nota>10 || isNaN(nota))
 		{
 			nota=prompt("ingrese bien su nota");
 			nota=parseInt(nota);
 		}
 
 		sexo=prompt("ingrese f o m");
-		while(sexo=="f" && sexo=="m")
+		while(sexo!="f" && sexo!="m")
 		{
 			sexo=prompt("error, ingrese f o m");
 		}

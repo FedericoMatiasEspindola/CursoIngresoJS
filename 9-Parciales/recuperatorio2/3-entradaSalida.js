@@ -9,8 +9,11 @@ function Mostrar()
 	largo=prompt("ingrese largo");
 	ancho=prompt("ingrese ancho");
 
+	largo=parseInt(largo);
+	ancho=parseInt(ancho);
 
-	resultado=largo*ancho;
+
+	resultado=largo+ancho+largo+ancho;
 	resultado=resultado*6;
 
 

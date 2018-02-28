@@ -19,7 +19,7 @@ function Mostrar()
 		numero=parseInt(numero);
 		respuesta=prompt("SI para continuar, NO para salir");
 		acumulador=acumulador+numero;
-		while(numero<0)
+		while(numero<0 || isNaN(numero))
 		{
 			numero=prompt("error, ingrese un numero positivo");
 			numero=parseInt(numero);
