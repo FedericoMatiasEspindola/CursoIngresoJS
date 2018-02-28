@@ -24,7 +24,7 @@ function Mostrar()
 		animal=prompt("ingrese nombre del animal");
 		peso=prompt("ingrese peso del animal");
 		peso=parseInt(peso);
-		acumulador=acumulador+peso;
+		
 		while(peso<0 || isNaN(peso))
 		{
 			peso=prompt("error, ingrese peso del animal");
@@ -40,7 +40,7 @@ function Mostrar()
 			temperatura=parseInt(temperatura);
 			respuesta=prompt("Si para continuar, No para salir")
 		}
-
+		acumulador=acumulador+peso;
 
 		if(temperatura%2==0 && temperatura!=0)
 		{
@@ -88,25 +88,16 @@ function Mostrar()
 			if(peso>maximoPeso)
 			{
 				maximoPeso=peso;
+				animalMax=animal;
 			}
 			else
 			{
 				minimoPeso=peso;
+				animalMin=animal
 			}
 		}
 
-		if(peso>maximoPeso)
-		{
-			animalMax=animal;
-		}
-		else
-		{
-			animalMin=animal;
-		}
-
-
-
-
+	
 
 
 
