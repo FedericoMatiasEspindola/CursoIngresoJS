@@ -38,7 +38,7 @@ function Mostrar()
 		{
 			temperatura=prompt("error, ingrese temperatura del animal");
 			temperatura=parseInt(temperatura);
-			respuesta=prompt("Si para continuar, No para salir")
+			respuesta=prompt("Si para continuar, No para salir");
 		}
 		acumulador=acumulador+peso;
 
@@ -82,13 +82,14 @@ function Mostrar()
 		{
 			maximoPeso=peso;
 			minimoPeso=peso;
+			animalMax=animal;
+			
 		}
 		else
 		{
 			if(peso>maximoPeso)
 			{
 				maximoPeso=peso;
-				animalMax=animal;
 			}
 			else
 			{
@@ -131,9 +132,9 @@ function Mostrar()
 	validar entre -40 y 40 -
 	la cantidad de temperatura pares -
 	cantidad de temperaturas impares -
-	el nombre del animal mas pesado
-	el nombre del animal menos pesado
+	el nombre del animal mas pesado -
+	el nombre del animal menos pesado -
 	la cantidad de animales que viven en habitad menos a 0 inclusive -
 	el promedio del peso de todos los animales -
-	la temperatura maxima y minima 
+	la temperatura maxima y minima -
 */
