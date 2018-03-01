@@ -13,7 +13,9 @@ function Mostrar()
 			alert("Veranito!!!!");
 			break;
 
-		case "marzo":
+			default:
+
+	/*	case "marzo":
 		case "abril":	
 		case "mayo":	
 		case "junio":
@@ -23,6 +25,7 @@ function Mostrar()
 		case "octubre":	
 		case "noviembre":
 		case "diciembre":
+		*/
 			alert("extraño enero y febrero!!!");
 			break;
 
