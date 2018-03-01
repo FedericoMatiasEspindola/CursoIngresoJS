@@ -84,7 +84,7 @@ function ComenzarIngreso ()
 
 	legajo=prompt("ingrese legajo de 4 cifras");
 	legajo=parseInt(legajo);
-	while(legajo<0 || legajo>10000 || isNaN(legajo))
+	while(legajo<1110 || legajo>10000 || isNaN(legajo))
 	{	
 		legajo=prompt("error, ingrese legajo de 4 cifras");
 		legajo=parseInt(legajo);
@@ -104,15 +104,15 @@ function ComenzarIngreso ()
 	switch(nacionalidad)
 	{
 		case "a":
-		nacionalidad="argentino/a";
+		nacionalidad="Argentino/a";
 			break;
 
 		case "e":
-		nacionalidad="extranjero/a";
+		nacionalidad="Extranjero/a";
 			break;
 
 		case "n":
-		nacionalidad="nacionalizado/a";
+		nacionalidad="Nacionalizado/a";
 			break;
 
 
