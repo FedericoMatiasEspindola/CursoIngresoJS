@@ -9,8 +9,8 @@ function Mostrar()
 	var cantidadImpar=0;
 	var maximoTemp;
 	var minimoTemp;
-	var maximoPeso;
-	var minimoPeso;
+	//var maximoPeso;
+	//var minimoPeso;
 	var promedio;
 	var acumulador=0;
 	var respuesta="si";
@@ -31,6 +31,26 @@ function Mostrar()
 			peso=parseInt(peso);
 		}
 
+		//max min peso animal
+		if(contador==1)
+		{
+			maximoPeso=peso;
+			minimoPeso=peso;	
+		}
+		if(peso>maximoPeso)
+			{
+				maximoPeso=peso;
+				animalMax=animal;
+			}
+		else
+			{
+				minimoPeso=peso;
+				animalMin=animal;
+			}
+		
+
+
+
 		temperatura=prompt("ingrese temperatura del animal");
 		temperatura=parseInt(temperatura);
 		respuesta=prompt("Si para continuar, No para salir")
@@ -42,6 +62,8 @@ function Mostrar()
 		}
 		acumulador=acumulador+peso;
 
+		
+		//par e impar temp
 		if(temperatura%2==0 && temperatura!=0)
 		{
 			cantidadPar++;
@@ -53,14 +75,14 @@ function Mostrar()
 
 
 
-
+		//temp habitad menos 0
 		if(temperatura <=0)
 		{
 			cantidadHabitadFrio++;
 		}
 
 
-
+		//max min temp
 		if(contador==1)
 		{
 			maximoTemp=temperatura;
@@ -78,34 +100,8 @@ function Mostrar()
 			}
 		}
 
-		if(contador==1)
-		{
-			maximoPeso=peso;
-			minimoPeso=peso;
-			animalMax=animal;
-			
-		}
-		else
-		{
-			if(peso>maximoPeso)
-			{
-				maximoPeso=peso;
-			}
-			else
-			{
-				minimoPeso=peso;
-				animalMin=animal
-			}
-		}
-
-	
-
-
 
 	}
-
-
-
 
 
 	promedio=acumulador/contador;
@@ -118,9 +114,6 @@ function Mostrar()
 	document.write("<br> promedio de los pesos de los animales "+promedio);
 	document.write("<br> temperatura maxima "+maximoTemp);
 	document.write("<br> temperatura minima "+minimoTemp);
-
-
-
 
 	
 }
