@@ -34,17 +34,20 @@ function Mostrar()
 		//max min peso animal
 		if(contador==1)
 		{
-			maximoPeso=peso;
-			minimoPeso=peso;	
+			animalMax=peso;
+			animalMin=peso;
+
+			//maximoPeso=peso;
+			//minimoPeso=peso;	
 		}
-		if(peso>maximoPeso)
+		if(peso>animalMax)
 			{
-				maximoPeso=peso;
+				//maximoPeso=peso;
 				animalMax=animal;
 			}
 		else
 			{
-				minimoPeso=peso;
+				//minimoPeso=peso;
 				animalMin=animal;
 			}
 		
